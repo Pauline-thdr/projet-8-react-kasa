@@ -1,0 +1,31 @@
+footer {
+  width: 100%;  
+  height: 190px; 
+  background-color: #000;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* on aligne en haut, et on gère les marges */
+  padding-top: 40px; /* espace au-dessus du logo */
+  position: relative;
+}
+
+footer img {
+  width: 122px;
+  height: 39.44px;
+  position: absolute;
+  bottom: 106px;
+}
+
+footer p {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  bottom: 29px; /* pile 29px au-dessus du bas du footer */
+}
+

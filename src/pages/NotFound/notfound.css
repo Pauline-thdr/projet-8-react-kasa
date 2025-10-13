@@ -1,0 +1,45 @@
+.notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #FF6060;
+}
+
+.notfound h1 {
+  font-size: 288px;
+  font-weight: 700;
+  margin: 139px 0 139px 0; /* espace vers le paragraphe */
+}
+
+.notfound p {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0 0 139px 0; /* espace vers le link */
+}
+
+.notfound a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: underline;
+  margin: 0 0 139px 0; /* espace vers le footer */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .notfound h1 {
+    font-size: 198px;
+    margin: 113px 0; /* espace réduit */
+  }
+
+  .notfound p {
+    font-size: 18px;
+    margin: 0 0 113px 0;
+  }
+
+  .notfound a {
+    font-size: 14px;
+    margin: 0 0 113px 0;
+  }
+}

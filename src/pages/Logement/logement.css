@@ -1,0 +1,153 @@
+/* Conteneur du texte aligné avec le slideshow */
+.logement-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Style pour le titre du logement */
+.logement-content h1 {
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 143%;
+  letter-spacing: 0;
+  vertical-align: bottom;
+  margin: 0 0 10px 0; /* petit espace sous le titre */
+}
+
+/* Style pour la location */
+.logement-content p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 143%;
+  letter-spacing: 0;
+  vertical-align: bottom;
+  margin-bottom: 20px;
+}
+
+/* header infos + info hôte */
+.logement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.logement-info {
+  flex: 1;
+}
+
+/* tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tag {
+  background-color: #ff6060;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+/* hôte et notation */
+.host-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: right;
+}
+
+.host p {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+.host-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* étoiles de notation */
+.star-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.rating {
+  display: flex;
+  gap: 10px;
+  height: 36px;
+}
+
+.star {
+  color: #e3e3e3;
+}
+
+.star.filled {
+  color: #ff6060;
+}
+
+/* collapses */
+.collapses {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px; /* espace avec le footer en desktop */
+}
+
+.collapses > div {
+  flex: 1; /* faire occuper tout l’espace disponible de manière égale aux enfants directs d’un conteneur flex */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logement-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .host-rating {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .star-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .rating {
+    height: 18px;
+    gap: 6px;
+  }
+
+  .collapses {
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 27px; /* espace avec le footer en mobile */
+  }
+}
+

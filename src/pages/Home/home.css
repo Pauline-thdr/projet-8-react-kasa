@@ -1,0 +1,25 @@
+.home .banner {
+    margin-bottom: 43px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 340px); /* 3 colonnes fixes en desktop */
+  gap: 50px 60px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  justify-content: center;
+  justify-items: center;
+  box-sizing: border-box;
+  padding: 56px 0;
+  margin-bottom: 50px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cards-container {
+    background-color: white;
+    grid-template-columns: repeat(1, 100%); /* 3 colonnes fixes en desktop */
+    padding: 0;
+  }
+}

@@ -1,0 +1,19 @@
+/** Mettre le style global (couleurs primaires, classes génériques etc) ex : dans ce fichier là <p> en 12 px **/
+/** Header (logo + lien de nav "Accueil" et "A propos") **/
+/** Footer (bandeau noir avec logo blanc et "tout droits réservés) **/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none; 
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}

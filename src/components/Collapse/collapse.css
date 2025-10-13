@@ -1,0 +1,88 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Conteneur des collapses */
+.collapses-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;           /* espace entre collapses (desktop) */
+  margin: 38px 0;      /* espace avec header et footer (desktop) */
+  width: 100%;
+  align-items: center; /* centre les collapse */
+}
+
+/* Collapse bloc */
+.collapse {
+  width: 100%;
+  max-width: 1023px; /* largeur desktop */
+}
+
+/* Header du collapse */
+.collapse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6060;
+  color: white;
+  padding: 10px 20px;
+  height: 52px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.collapse-header h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Contenu du collapse */
+.collapse-content {
+  padding: 15px 20px;
+  background-color: #f6f6f6;
+  color: #333;
+  animation: fadeIn 0.3s ease-in-out;
+  border-radius: 0 0 10px 10px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.collapse-content ul {
+  list-style: none; /* enlève les puces */
+  padding-left: 0;  /* enlève le retrait gauche */
+  margin: 0;
+}
+
+.arrow img {
+  transition: transform 0.3s ease;
+  transform: rotate(0deg); /* flèche vers le haut (par défaut) */
+}
+
+.arrow.open img {
+  transform: rotate(180deg); /* flèche vers le bas quand c’est ouvert */
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .collapse {
+    max-width: 335px; /* largeur mobile */
+  }
+
+  .collapse-header {
+    height: 30px; /* hauteur mobile */
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .collapse-content {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .collapses-container {
+    gap: 20px;      /* espace entre collapses (mobile) */
+    margin: 19px 0; /* espace avec header et footer (mobile) */
+  }
+}

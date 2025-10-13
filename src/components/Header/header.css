@@ -1,0 +1,67 @@
+/* Desktop */
+header {
+  margin: 40px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 210.32px;  
+  height: 68px;
+}
+
+nav {
+  display: flex;
+  gap: 57px; /* espace entre les liens */
+}
+
+nav a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  line-height: 143%;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  header img {
+    height: 46px;
+    opacity: 1;
+  }
+
+  nav {
+    display: flex;
+    gap: 0; /* on désactive le gap général pour affiner les espacements */
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+    vertical-align: bottom;
+  }
+}

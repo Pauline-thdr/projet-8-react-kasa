@@ -1,0 +1,50 @@
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 50px auto 30px auto;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Cible uniquement les flèches du Slideshow */
+.slideshow .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* centre verticalement un élément absolument positionné */
+  font-size: 48px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slideshow .arrow.left {
+  left: 25.96px;
+}
+
+.slideshow .arrow.right {
+  right: 25.96px;
+}
+
+.slideshow .counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* centre horizontalement un élément absolument positionné */
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 143%;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: bottom;
+}
+
