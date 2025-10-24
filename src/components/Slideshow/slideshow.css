@@ -48,3 +48,28 @@
   vertical-align: bottom;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .slideshow {
+    height: 255px;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+
+  .slideshow .arrow img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .slideshow .arrow.left {
+    left: 6px;
+  }
+
+  .slideshow .arrow.right {
+    right: 6px;
+  }
+
+  .slideshow .counter {
+    display: none; /* Masqué en version mobile */
+  }
+}

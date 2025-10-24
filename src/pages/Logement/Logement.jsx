@@ -48,7 +48,7 @@ function Logement() {
         {/* Hôte + note */}
         <div className="host-rating">
           <div className="host">
-            <p>{property.host.name}</p>
+            <p>{property.host.name.replace(" ","\n")}</p>
             <img
               src={property.host.picture}
               alt={`Hôte : ${property.host.name}`}
