@@ -18,7 +18,11 @@ function Home() {
     <div className="home">
       <Banner
         image="src/assets/banner-home.jpg"
-        text="Chez vous, partout et ailleurs"
+        text={
+          <>
+          Chez vous,<br className="mobile-break" /> partout et ailleurs
+          </>
+        } // balise br pour créer un retour à la ligne en mode mobile
       />
 
       <div className="cards-container">

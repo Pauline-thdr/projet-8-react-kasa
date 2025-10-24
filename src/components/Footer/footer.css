@@ -1,6 +1,6 @@
 footer {
   width: 100%;  
-  height: 190px; 
+  height: 209px; 
   background-color: #000;
   color: #fff;
 
@@ -8,24 +8,35 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* on aligne en haut, et on gère les marges */
-  padding-top: 40px; /* espace au-dessus du logo */
   position: relative;
 }
 
 footer img {
   width: 122px;
   height: 39.44px;
-  position: absolute;
-  bottom: 106px;
+  padding-top: 66px;
+  padding-bottom: 28px;
 }
 
 footer p {
   font-size: 24px;
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin: 0;
-  position: absolute;
-  bottom: 29px; /* pile 29px au-dessus du bas du footer */
+  padding-bottom: 29px;
 }
 
+/* responsive diminution taille texte et retravaille des espacements*/
+@media (max-width: 768px) {
+  footer img {
+    padding-top: 66px;
+    padding-bottom: 10px; /* diminution de l’espace entre le logo et le texte */
+  }
+
+  footer p {
+    font-size: 12px;
+    max-width: 130px; /* texte sur deux lignes */
+    text-align: center;
+    padding-bottom: 58px;
+  }
+}

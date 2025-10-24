@@ -16,7 +16,6 @@ function AppRouter() {
         <Route path="/logement/:id" element={<Logement />} /> /* : pour paramètres dynamique */
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }

@@ -1,1 +1,48 @@
-/* remttre style ici pour la page à propos et garder le style classique dans collapse.css */
+/* Page About */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Conteneur des collapses */
+.collapses-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;          /* espace vertical entre chaque collapse */
+  margin: 30px auto;  /* centre le conteneur horizontalement et ajoute marge verticale */
+  width: 100%;
+  max-width: 1023px;
+  align-items: center; /* centre chaque Collapse */
+}
+
+/* Chaque collapse dans About */
+.about-collapse {
+  width: 100%;         /* prend toute la largeur du conteneur */
+  max-width: 1023px;    /* largeur maximale du Collapse */
+}
+
+.about .collapse-header h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Responsive mobile : réduire police d'écriture, changer les espaces, réduire la hauteur des collapses et augmenter la taille de la banner + collapses pour correspondre au header et à la maquette */
+@media (max-width: 768px) {
+  .about .collapse-header h3 {
+    font-size: 13px;
+  }
+
+  .about .collapse-content p {
+    font-size: 12px;
+  }
+
+  .collapses-container {
+    gap: 20px;
+    margin: 20px auto;
+  }
+
+  .about-collapse {
+    max-width: 100%;
+  }
+}

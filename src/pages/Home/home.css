@@ -1,5 +1,14 @@
+.home {
+  margin: 0 20px;
+}
+
 .home .banner {
     margin-bottom: 43px;
+}
+
+/* Le retour à la ligne en mobile uniquement est masqué par défaut */
+.mobile-break {
+  display: none;
 }
 
 .cards-container {
@@ -17,6 +26,28 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .home {
+    margin: 0px;
+  }
+
+  .home .banner {
+    margin-bottom: 22px;
+  }
+
+  .banner {
+    justify-content: flex-start;
+  }
+
+  .banner h1 {
+    text-align: left;
+    padding-left: 16px;
+  }
+
+  /* Activation du retour à la ligne en mode mobile */
+  .mobile-break {
+    display: block;
+  }
+
   .cards-container {
     background-color: white;
     grid-template-columns: repeat(1, 100%); /* 3 colonnes fixes en desktop */

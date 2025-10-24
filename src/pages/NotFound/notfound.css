@@ -7,7 +7,7 @@
 }
 
 .notfound h1 {
-  font-size: 288px;
+  font-size: 198px;
   font-weight: 700;
   margin: 139px 0 139px 0; /* espace vers le paragraphe */
 }
@@ -29,13 +29,14 @@
 /* Responsive */
 @media (max-width: 768px) {
   .notfound h1 {
-    font-size: 198px;
+    font-size: 112px;
     margin: 113px 0; /* espace réduit */
   }
 
   .notfound p {
     font-size: 18px;
     margin: 0 0 113px 0;
+    max-width: 260px;
   }
 
   .notfound a {
